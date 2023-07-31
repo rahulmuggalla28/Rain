@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Prediction</title>
+</head>
+<body>
+    <h1>Rain Prediction</h1>
+    <form action="predict", method="post">
+        <label for="location">Location</label>
+        <select name="location" id="location">
+            <option value="0">Agra</option>
+            <option value="1">Ahmedabad</option>
+            <option value="2">Bangkok</option>
+            <option value="3">Beijing</option>
+            <option value="4">Bengaluru</option>
+            <option value="5">Berlin</option>
+            <option value="6">Bhopal</option>
+            <option value="7">Buenos Aires</option>
+            <option value="8">Chennai</option>
+            <option value="9">Delhi</option>
+            <option value="10">Guntur</option>
+            <option value="11">Hyderabad</option>
+            <option value="12">Indore</option>
+            <option value="13">Istanbul</option>
+            <option value="14">Jaipur</option>
+            <option value="15">Johannesburg</option>
+            <option value="16">Kanpur</option>
+            <option value="17">Kolkata</option>
+            <option value="18">London</option>
+            <option value="19">Los Angeles</option>
+            <option value="20">Lucknow</option>
+            <option value="21">Ludhiana</option>
+            <option value="22">Madrid</option>
+            <option value="23">Mexico City</option>
+            <option value="24">Moscow</option>
+            <option value="25">Mumbai</option>
+            <option value="26">Nagpur</option>
+            <option value="27">New York</option>
+            <option value="28">Paris</option>
+            <option value="29">Patna</option>
+            <option value="30">Pune</option>
+            <option value="31">Rio de Janeiro</option>
+            <option value="32">Rome</option>
+            <option value="33">Seoul</option>
+            <option value="34">Shanghai</option>
+            <option value="35">Surat</option>
+            <option value="36">Sydney</option>
+            <option value="37">Tokyo</option>
+            <option value="38">Vadodara</option>
+            <option value="39">Varanasi</option>
+            <option value="40">Vijayawada</option>
+        </select><br><br>
+
+        <label for="min_temp">Min Temperature</label>
+        <input type="number" name="min_temp" id="min_temp"><br><br>
+
+        <label for="max_temp">Max Temperature</label>
+        <input type="number" name="max_temp" id="max_temp"><br><br>
+
+        <label for="wind_dir">Wind Direction</label>
+        <input type="number" name="wind_dir" id="wind_dir"><br><br>
+
+        <label for="wind_speed"> Wind Speed (m/s)</label>
+        <input type="number" name="wind_speed" id="wind_speed"><br><br>
+
+        <label for="humidity">Humidity (%)</label>
+        <input type="number" name="humidity" id="humidity"><br><br>
+
+        <label for="pressure">Pressure (hPa)</label>
+        <input type="number" name="pressure" id="pressure"><br><br>
+        
+        <label for="clouds">Clouds (%)</label>
+        <input type="number" name="clouds" id="clouds"><br><br>
+
+        <label for="temp">Current Temperature</label>
+        <input type="number" name="temp" id="temp"><br><br>
+
+        <label for="rain">Rain</label>
+        <select name="rain" id="rain">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+
+    </form>
+
+    <h2>Prediction :</h2>
+    {{prediction}}
+</body>
+</html>
